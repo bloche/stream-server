@@ -35,9 +35,9 @@ The reason for including this client is to minimize stream delay time on the cli
 http://nginx.org/LICENSE
 
 > Copyright (C) 2002-2018 Igor Sysoev
-Copyright (C) 2011-2018 Nginx, Inc.
-All rights reserved.
-
+> Copyright (C) 2011-2018 Nginx, Inc.
+> All rights reserved.
+>
 > Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
 are met:
@@ -46,7 +46,7 @@ are met:
 > 2. Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
-
+>
 > THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
