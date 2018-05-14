@@ -12,33 +12,38 @@ Currently the server will run on Windows only, as the intention is to stream gam
 2. Run the `start.bat` script to start up the server
 3. Open OBS or any other RTMP streaming application
 4. Direct the RTMP stream at `rtmp://127.0.0.1/live` with a stream key of your choice
-5. Client downloads available at `http://127.0.0.1/downloads` (Windows and OSX), or any application that can consume a RTMP source (i.e. VLC) could be used as well
-6. Navigate people to `rtmp://<your-ip>/live/<stream-key>` in their client of choice
-7. Start streaming!
+5. Port Forward as necessary, if intended for external use, ports `80` and `1935`
+6. Client downloads available at `http://<your-ip>/downloads` (Windows and OSX), or any application that can consume a RTMP source (i.e. VLC) could be used as well
+7. Navigate people to `rtmp://<your-ip>/live/<stream-key>` in their client of choice
+8. Start streaming!
 
 ### The Client
 
 The client downloads that come with this project are self contained, and doesn't require additional installation. To start the client:
 
-* Download from the `/downloads` endpoint of the server
+* Download from `http://<server-ip>/downloads`
 * Run the `run.bat` or `run.sh` file that comes with your download
 * Enter the URL for the RTMP server
 * If a black screen shows up, and OBS is streaming, the client might need to be restarted
 
-*Note: OSX users will need to open the `run.sh` file with a terminal emulator (by default it will try to use Xcode if you run it by double clicking).*
+*Note: OSX users will need to open the `run.sh` file with a terminal emulator (by default it will try to use Xcode if you run it by double clicking unless otherwise configured).*
 
-The reason for including this client is to reduce stream delay time on the client's end. If a delay of a few seconds is not a problem, using VLC or another RTMP client should work fine.
+The reason for including this client is to minimize stream delay time on the client's end. If a delay of a few seconds is not a problem, using VLC or another RTMP client should work fine.
 
 ### License
 
 http://nginx.org/LICENSE
 
+> Copyright (C) 2002-2018 Igor Sysoev
+Copyright (C) 2011-2018 Nginx, Inc.
+All rights reserved.
+
 > Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
 are met:
-1. Redistributions of source code must retain the above copyright
+> 1. Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright
+> 2. Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
 

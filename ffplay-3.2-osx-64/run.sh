@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-read -p "Stream IP: " IP
+read -p "Stream URL: " URL
 
 FILEDIR=$(dirname $0)
 
-$FILEDIR/ffplay -fflags nobuffer rtmp://$IP/live/game
+$FILEDIR/ffplay -fflags nobuffer "$URL"

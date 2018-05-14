@@ -1,6 +1,6 @@
 @echo off
 set FILEDIR=%~dp0
 
-set /p IP="Steam IP: "
+set /p URL="Steam URL: "
 
-%FILEDIR%ffplay.exe -fflags nobuffer rtmp://%IP%/live/game
+%FILEDIR%ffplay.exe -fflags nobuffer "%URL%"
