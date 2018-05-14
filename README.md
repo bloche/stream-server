@@ -35,7 +35,9 @@ The reason for including this client is to minimize stream delay time on the cli
 http://nginx.org/LICENSE
 
 > Copyright (C) 2002-2018 Igor Sysoev
+>
 > Copyright (C) 2011-2018 Nginx, Inc.
+>
 > All rights reserved.
 >
 > Redistribution and use in source and binary forms, with or without
